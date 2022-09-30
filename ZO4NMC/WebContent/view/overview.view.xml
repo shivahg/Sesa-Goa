@@ -1,0 +1,96 @@
+<mvc:View controllerName="ZO4NMCC.ZO4NMCC.controller.overview" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app1">
+			<pages>
+				<Page id="page" title="BARGE NOMINATION PROCESS" showFooter="true">
+					<content>
+							 <!-- <VBox> 
+				
+					
+							<Table id="table1" inset="true" items="{ntdata>/}">
+						
+							
+							
+						<columns>
+							<Column>
+								<Label text="Nomination Key"/>
+							</Column>
+							<Column>
+								<Text text="Nomination No"/>
+							</Column> 
+								<Column>
+								<Text text="Nomination Type"/>
+							</Column>
+							 <Column>
+								<Text text="Vehicle No"/>
+							</Column>
+								 <Column>
+								<Text text="Carrer"/>
+							</Column>
+								<Column> 
+								<Text text="Shipper"/>
+							</Column>  
+								<Column> 
+								<Text text="TransSystem"/>
+							</Column> 
+								<Column> 
+								<Text text="UOM"/>
+							</Column> 
+								<Column> 
+								<Text text="Cycle Id"/>
+							</Column> 
+								<Column> 
+								<Text text="Ext.Identifier"/>
+							</Column>
+									<Column> 
+								<Text text="Bulk ShipType"/>
+							</Column> 
+								<Column> 
+								<Text text="Plant"/>
+							</Column> 
+								<Column> 
+								<Text text="MOT"/>
+							</Column>
+									<Column> 
+								<Text text="TrspPlant"/>
+							</Column>
+							
+							
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+								
+								 	<Label text="{ntdata>np}" />
+										<Label text="{ntdata>nt}"/>
+										<Label text="{ntdata>nn}"/> 
+										<Label text="{ntdata>nda}" />
+										<Label text="{ntdata>ne}"/>
+										<Label text="{ntdata>nd}"/>
+										<Label text="{ntdata>ns}" />
+										<Label text="{ntdata>np1}"/>
+										<Label text="{ntdata>nc}"/>
+										<Label text="{ntdata>nb}"/>
+										<Label text="{ntdata>ns}" />
+										<Label text="{ntdata>np1}"/>
+										<Label text="{ntdata>nc}"/>
+										<Label text="{ntdata>nb}"/>
+									
+										
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table> 
+					</VBox> -->
+					</content>
+					<!-- <footer>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Button id="new" text="New" press="new"  type="Emphasized"/>
+					</OverflowToolbar>
+				</footer> -->
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

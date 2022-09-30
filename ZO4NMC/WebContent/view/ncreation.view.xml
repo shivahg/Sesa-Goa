@@ -1,0 +1,522 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ZO4NMCC.ZO4NMCC.controller.ncreation"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:m="sap.m" 	xmlns:tnt="sap.tnt">
+	<App id="app1">
+		<pages>
+			<Page title="Nomination Creation">
+			<tnt:ToolHeader design="Auto"  width="100%">
+						<Text text="Nomination Maintain"/>
+						</tnt:ToolHeader>
+					<content>
+					
+					
+<f:SimpleForm id="sf"
+						editable="true"
+layout="ResponsiveGridLayout"
+
+labelSpanXL="4"
+labelSpanL="4"
+labelSpanM="12"
+labelSpanS="12"
+adjustLabelSpan="false"
+emptySpanXL="0"
+emptySpanL="0"
+emptySpanM="0"
+emptySpanS="0"
+columnsXL="2"
+columnsL="2"
+columnsM="2"
+singleContainerFullSize="false">
+ 
+						<!-- <OverflowToolbar id="otb1" >
+						<Text text="Nomination Maintain"/>
+						</OverflowToolbar> -->
+								<f:content>
+						
+						
+							
+								<!-- <Label text="Nomination Key"/>
+								<Input id="nk" width="50%"/>
+									<Label text="Nomination No"/>
+								<Input id="nn" width="50%"/>
+									<Label text="Nomination Type"/>
+								<Input
+				text="Nomination Type"
+				id="nt"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="nttype"
+				liveChange="onsuggest_nt"
+				 /> -->
+				 	
+								<Label id="vnn" text="Vehicle No"/>
+								<Input
+				id="vn"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="vn"
+				liveChange="onsuggest_vn"
+				 />
+				 <Label id="nnn" text="Nomination No"/>
+								<Input id="nn" width="50%" liveChange="onsuggest_nn"/>
+				 	<Label text="Carrier"/>
+								<Input id="cr" width="50%"/>
+								<!-- <Label text="Shipper"/>
+								<Input id="sh" width="50%"/> -->
+				<!-- 				<Label text="Trans System"/>
+								<Input
+				id="ts"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="ts"
+				liveChange="onsuggest_ts"
+				 /> -->
+				 	
+				<!--  <Label text="UOM"/>
+								<Input
+				id="um"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="um"
+				liveChange="onsuggest_um"
+				 />
+				 
+				 <Label text="Cycle Id"/>
+								<Input id="ci" width="50%"/>
+								
+								<core:Title text=""/>
+								 <Label text="Ext.Identifier"/>
+								<Input id="ex" width="50%"/>
+								 <Label text="Bulk ShipType"/>
+								<Input
+				id="bs"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="bs"
+				liveChange="onsuggest_bs"
+				 /> -->
+				
+				  <Label text="Sales DocomentNo"/>
+								<Input
+				id="dn"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="dn"
+				liveChange="onsuggest_dn" 
+				 />
+				 <Label  text="Customer Name"/>
+								<Input id="cn" width="50%" />
+								
+								<Label  text="Vessel Name"/>
+								<Input id="vna" width="50%" />
+				   <Label text="Item Number"/>
+								<Input
+				id="in1"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="in"
+				liveChange="onsuggest_in"
+				 /> 
+				 <Label  text="Material Code"/>
+								<Input id="mc" width="50%" />
+				    <Label text="Barge Unloading Equipment"/>
+								<Input
+				id="bun"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="bun"
+				liveChange="onsuggest_bun"
+				 />
+				  
+				 				<!--  <Label text="Intr.Plant"/>
+								<Input
+				id="pt"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="pt"
+				liveChange="onsuggest_pt"
+				 />
+				 <Label text="MOT"/>
+								<Input
+				id="mt"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="mt"
+				liveChange="onsuggest_mt"
+				 />
+				 <Label text="Extr.Plant"/>
+								<Input
+				id="et"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="et"
+				liveChange="onsuggest_et"
+				 />
+				  -->
+							<!-- <Label text="Item Number"/>
+								<Input id="in" width="50%"/> -->
+								 <!-- <Label text="Transhipper Vessel"/>
+								<Input
+				id="tv"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="tv"
+				liveChange="onsuggest_tv"
+				 /> 	 -->
+						
+								</f:content>
+							</f:SimpleForm>
+							  
+
+									<IconTabBar
+		id="idIconTabBar"
+		select=".onFilterSelect"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter
+				showAll="true"
+				
+				
+				key="All" />
+			<IconTabSeparator />
+			<IconTabFilter
+				text="Source">
+				<tnt:ToolHeader design="Auto"  width="100%">
+						<Text text="Item Maintain"/>
+						</tnt:ToolHeader>
+				<f:SimpleForm id="sf1"
+						editable="true"
+layout="ResponsiveGridLayout"
+
+labelSpanXL="4"
+labelSpanL="4"
+labelSpanM="12"
+labelSpanS="12"
+adjustLabelSpan="false"
+emptySpanXL="0"
+emptySpanL="0"
+emptySpanM="0"
+emptySpanS="0"
+columnsXL="2"
+columnsL="2"
+columnsM="2"
+singleContainerFullSize="false">
+
+								<f:content>
+								
+								 <Label text="Transport System"/>
+								<!-- <Input id="ts" text="BARGE_SGL" width="50%" liveChange="onsuggest_ts"/> -->
+								<Text text="TSBRG-SGLG" width="50%" id="ts"/>
+												<Label text="Location ID"/>
+								<Input
+			id="li"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="li"
+				liveChange="onsuggest_li"
+				
+				 />
+									
+									<Label text="Location Partner Plant"/>
+								<Input
+				id="lpp"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="lpp"
+				liveChange="onsuggest_lpp"
+				 /> 
+								<Label text="Location Partner Storage Location"/>
+								<Input
+				id="lsl"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="lsl"
+				liveChange="onsuggest_lsl"
+				 />
+				 
+				 	<!-- <Label text="Carrier"/>
+								<Input id="cr" width="50%"/> -->
+								<!-- <Label text="Shipper"/>
+								<Input id="sh" width="50%"/> -->
+				
+				 
+				 	
+				<!--   <Label text="Demand Meterial"/>
+								<Input
+				id="dm"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="dm"
+				liveChange="onsuggest_dm"
+				 /> -->
+				 
+				 <!-- <Label text="Cycle Id"/>
+								<Input id="ci" width="50%"/>
+								
+								<core:Title text=""/>
+								 <Label text="Ext.Identifier"/>
+								<Input id="ex" width="50%"/> -->
+								 <Label text="Schedule Date"/>
+				<DatePicker id="sd" width="50%" placeholder="Enter Date ..." change="sdate" UTC="true"/> 
+				
+				  <Label text="Schedule Quantity"/>
+								<Input id="sq" width="50%" liveChange="onsuggest_sq"/>
+				  <!--  <Label text="POSNR"/>
+								<Input
+				id="por"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="por"
+				liveChange="onsuggest_por"
+				 /> -->
+				   <!-- <Label text="Barge Unloading Equipment"/>
+								<Input
+				id="bun"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="bun"
+				liveChange="onsuggest_bun"
+				 />
+				  
+				 				 <Label text="Intr.Plant"/>
+								<Input
+				id="pt"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="pt"
+				liveChange="onsuggest_pt"
+				 />
+				 <Label text="MOT"/>
+								<Input
+				id="mt"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="mt"
+				liveChange="onsuggest_mt"
+				 />
+				 <Label text="Extr.Plant"/>
+								<Input
+				id="et"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="et"
+				liveChange="onsuggest_et"
+				 />
+				  -->
+							<!-- <Label text="POSI"/>
+								<Input id="posi" width="50%"/>
+								<Label text="ZM_TV"/>
+								<Input id="tv" width="50%"/> 	 -->
+						
+								</f:content>
+							</f:SimpleForm>
+				 
+			</IconTabFilter>
+			<!-- ///////////////////////////////////////////////////////// -->
+			<IconTabFilter
+				
+				text="Destination">
+				<tnt:ToolHeader design="Auto"  width="180%">
+						<Text text="Item Maintain"/>
+						</tnt:ToolHeader>
+							<f:SimpleForm id="sf2"
+						editable="true"
+layout="ResponsiveGridLayout"
+
+labelSpanXL="4"
+labelSpanL="4"
+labelSpanM="12"
+labelSpanS="12"
+adjustLabelSpan="false"
+emptySpanXL="0"
+emptySpanL="0"
+emptySpanM="0"
+emptySpanS="0"
+columnsXL="2"
+columnsL="2"
+columnsM="2"
+singleContainerFullSize="false">
+
+								<f:content>
+								
+								 <Label text="Transport System"/>
+								<!-- <Input id="ts1" text="BARGE_SGL" width="50%"/> -->
+								<Text text="TSBRG-SGLG" id="ts1" width="50%"/>
+												<Label text="Location ID"/>
+								<Input
+			id="li1"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="li1"
+				liveChange="onsuggest_li1"
+				
+				 />
+									
+									<Label text="Location Partner Plant"/>
+								<Input
+				id="lpp1"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="lpp1"
+				liveChange="onsuggest_lpp1"
+				 /> 
+								<Label text="Location Partner Storage Location"/>
+								<Input
+				id="lsl1"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="lsl1"
+				liveChange="onsuggest_lsl1"
+				 />
+				 
+				 	<!-- <Label text="Carrier"/>
+								<Input id="cr" width="50%"/> -->
+								<!-- <Label text="Shipper"/>
+								<Input id="sh" width="50%"/> -->
+				
+				 	
+				 <!--  <Label text="Demand Meterial"/>
+								<Input
+				id="dm1"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="dm1"
+				liveChange="onsuggest_dm1"
+				 /> -->
+				 
+				 <!-- <Label text="Cycle Id"/>
+								<Input id="ci" width="50%"/>
+								
+								<core:Title text=""/>
+								 <Label text="Ext.Identifier"/>
+								<Input id="ex" width="50%"/> -->
+								 <Label text="Schedule Date"/>
+				<!-- <DatePicker id="sd1" width="50%" placeholder="Enter Date ..." />  -->
+				<Text width="50%" id="sd1"/>
+				
+				  <Label text="Schedule Quantity"/>
+								<Input id="sq1" width="50%"/>
+				  <!--  <Label text="POSNR"/>
+								<Input
+				id="por"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="por"
+				liveChange="onsuggest_por"
+				 /> -->
+				   <!-- <Label text="Barge Unloading Equipment"/>
+								<Input
+				id="bun"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="bun"
+				liveChange="onsuggest_bun"
+				 />
+				  
+				 				 <Label text="Intr.Plant"/>
+								<Input
+				id="pt"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="pt"
+				liveChange="onsuggest_pt"
+				 />
+				 <Label text="MOT"/>
+								<Input
+				id="mt"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="mt"
+				liveChange="onsuggest_mt"
+				 />
+				 <Label text="Extr.Plant"/>
+								<Input
+				id="et"
+				type="Text"
+			width="50%"
+				showSuggestion="true"
+				showValueHelp="true"
+				valueHelpRequest="et"
+				liveChange="onsuggest_et"
+				 />
+				  -->
+							<!-- <Label text="POSI"/>
+								<Input id="posi" width="50%"/>
+								<Label text="ZM_TV"/>
+								<Input id="tv" width="50%"/> 	 -->
+						
+								</f:content>
+							</f:SimpleForm>
+				 </IconTabFilter>
+		</items>
+	</IconTabBar>
+					</content>
+					<footer>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Button text="Validate" press="validate" type="Neutral"/>
+						<Button text="Save" press="save" type="Success"/>
+					
+					</OverflowToolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
