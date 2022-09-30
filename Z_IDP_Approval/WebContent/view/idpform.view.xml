@@ -1,0 +1,344 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="Z_IDP_Development.Z_IDP_Development.controller.idpform" xmlns:html="http://www.w3.org/1999/xhtml"
+	 xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:tnt="sap.tnt">
+	<App>
+		<pages>
+			<Page title="Individual Development Form" showFooter="true" showNavButton="true" navButtonPress="back">
+			<Toolbar>
+			        <Label design="Bold" text="IDP Approvals"/>
+					<Text/>
+					
+					<ToolbarSpacer/>
+					<Label design="Bold" text="Status:"/>
+					<Text  textAlign="End" text="{idpdata>/Status}"/>
+				</Toolbar>
+				
+				<content>
+					<VBox>
+						<f:SimpleForm id="sf" editable="true" 
+						layout="ResponsiveGridLayout"
+					 backgroundDesign="Translucent" breakpointL="1024" breakpointM="600" breakpointXL="1440"
+					 >
+							<f:content>
+								<core:Title text=""/>
+								<Label text="Name"/>
+								<Text text="{idpdata>/Ename}"  id="empname"/>
+								
+								<Label text="IDP Number"/>
+								<Text text="{idpdata>/IdpNo}" id="idpno"/>
+								<Label text="Department"/>
+								<Text text="{idpdata>/Dept}" id="dept"/>
+								<core:Title text=""/>
+								<Label text="Designation"/>
+								<Text text="{idpdata>/Desi}" id="design"/>
+								<Label text="Grade"/>
+								<Text text="{idpdata>/Grade}" id="grade" />
+								<Label text=" HOD"/>
+								<Text text="{idpdata>/Hod}" id="hod" />
+							
+                               </f:content>
+						</f:SimpleForm>
+					
+						<Table   id="tb1" items="{idpdata1>/}" inset="false"  width="100%" class=".sapMListTblCell" >
+						<headerToolbar>
+								<OverflowToolbar>
+										<Text text="Vedanta Leadership Competencies"/>
+								</OverflowToolbar>
+							</headerToolbar>
+							
+							<infoToolbar>
+								<Toolbar>
+								<Text text="Areas of Development(chose max.3 from the above competencies)"/>
+								</Toolbar>
+							</infoToolbar>
+							
+						<columns>
+							
+								<Column hAlign="Center">
+								<Text text="Ledership Competencies"  />
+							</Column>
+								<Column demandPopin="true" minScreenWidth="Tablet" hAlign="Center">
+								<Text text="Development Options"
+								/>
+							</Column>
+								<Column 	demandPopin="true" minScreenWidth="Tablet" hAlign="Center">
+								<Text text="Theme of Assignment"/>
+							</Column >
+								<Column 	demandPopin="true" minScreenWidth="Tablet" hAlign="Center">
+								<Text text="Description of Assignment"/>
+							</Column>
+								<Column hAlign="Center">
+								<Text text="StartDate"/>
+							</Column>
+								<Column hAlign="Center">
+								<Text text="EndDate"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+	<!-- 								                	 <l:VerticalLayout 
+		class="sapUiContentPadding"
+		width="100%">
+									
+		<ComboBox
+		
+			selectionChange="handleSelectionChange"
+			
+			width="350px"
+			items="{
+				path: '/MApprove',
+				sorter: { path: 'a' }
+			}">
+			<core:Item  text="{a}"/>
+		</ComboBox> 
+	</l:VerticalLayout>-->          
+	
+									<Text text="{idpdata1>LeadComp}" id="compencies"/>
+									<Text text="{idpdata1>DeveOpt}" id="dev_opt"/>
+									<Text text="{idpdata1>GoalAssig}" id="t_assign"/>
+									<Text text="{idpdata1>DescAssig}" id="d_assign"/>
+								<!-- 	<Text text="{idpdata1>EstiSartDate}" id="s_date"/> -->
+								<Text text="{path:'idpdata1>EstiSartDate', type:'sap.ui.model.type.DateTime',
+								formatOptions:{
+								pattern:'yyyy/MM/dd'
+								}
+								}"/>
+									<!-- <Text text="{idpdata1>EstiCompDate}" id="e_date"/> -->
+									<Text text="{path:'idpdata1>EstiCompDate', type:'sap.ui.model.type.DateTime',
+								formatOptions:{
+								pattern:'yyyy/MM/dd'
+								}
+								}"/>
+									
+								</cells>
+							</ColumnListItem>
+						</items>
+						</Table>
+				
+					
+						<Table  items="{idpdata2>/}" inset="false" id="tb3"  width="100%" class=".sapMListTblCell ">
+						<headerToolbar>
+								<OverflowToolbar>
+										<Text text="Vedanta Leadership Competencies"/>
+								</OverflowToolbar>
+							</headerToolbar>
+								
+							<infoToolbar>
+							<OverflowToolbar>
+					<Text text="Strengths to be Leverged(chose max.2 from the above competencies)"/>
+					</OverflowToolbar>
+					</infoToolbar>
+						<columns>
+								
+								
+							<Column hAlign="Center">
+								<Text text="Ledership Competencies"/>
+							</Column>
+								<Column 	demandPopin="true" minScreenWidth="Tablet" hAlign="Center">
+								<Text text="Development Options"/>
+							</Column>
+								<Column 	demandPopin="true" minScreenWidth="Tablet" hAlign="Center">
+								<Text text="Theme of Assignment"/>
+							</Column>
+								<Column 	demandPopin="true" minScreenWidth="Tablet" hAlign="Center">
+								<Text text="Description of Assignment"/>
+							</Column>
+								<Column hAlign="Center">
+								<Text text="StartDate"/>
+							</Column>
+								<Column hAlign="Center">
+								<Text text="EndDate"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem class=".sapMListTblCell ">
+								<cells>
+		<!-- 								<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="100%">
+									
+		<ComboBox
+			selectionChange="handleSelectionChange"
+			
+			width="350px"
+			items="{
+				path: '/MApprove',
+				sorter: { path: 'a' }
+			}">
+			<core:Item  text="{a}"/>
+		</ComboBox>
+	</l:VerticalLayout> -->         
+									<Text text="{idpdata2>LeadComp}" id="s_compencies"/>
+									<Text text="{idpdata2>DeveOpt}" id="s_dev_opt"/>
+									<Text text="{idpdata2>GoalAssig}" id="s_t_assign"/>
+									<Text text="{idpdata2>DescAssig}" id="s_d_assign"/>
+									<!-- <Text text="{idpdata2>EstiSartDate}" id="s_s_date"/> -->
+									<Text text="{path:'idpdata2>EstiSartDate', type:'sap.ui.model.type.DateTime',
+								formatOptions:{
+								pattern:'yyyy/MM/dd'
+								}
+								}"/>
+									<Text text="{path:'idpdata2>EstiCompDate', type:'sap.ui.model.type.DateTime',
+								formatOptions:{
+								pattern:'yyyy/MM/dd'
+								}
+								}"/>
+								
+									<!-- <Text text="{idpdata2>EstiCompDate}" id="e_e_date"/> -->
+								</cells>
+							</ColumnListItem>
+						</items>
+						</Table>
+					
+			
+						<Table   inset="false" id="tb4"  width="100%" class=".sapMListTblCell ">
+						<headerToolbar>
+								<OverflowToolbar>
+										<Text text="Vedanta Leadership Competencies"/>
+								</OverflowToolbar>
+							</headerToolbar>
+								
+							<infoToolbar>
+							<OverflowToolbar>
+					<Text text="Career Aspirations"/>
+					</OverflowToolbar>
+					</infoToolbar>
+						<columns>
+								<Column hAlign="Center">
+								<Text text="Short Term(1 to 2 years)"/>
+								</Column>
+								
+							<Column 	demandPopin="true" hAlign="Center">
+								<Text text="Next Carrer Stage(3 to 4 years)"/>
+							</Column>
+								<Column hAlign="Center">
+								<Text text="Open for Migration"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem class=".sapMListTblCell ">
+								<cells>
+										
+							
+									<Text id="st" text="{idpdata>/ShortTerm}"/>
+									<Text  id="nc" text="{idpdata>/NextCarrer}" />
+									<Text text="{idpdata>/OpenMg}" id="omg"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+						</Table>
+					<!-- <f:Form id="FormChange354" editable="true">
+							<f:title>
+								<core:Title text=" APPROVALS"/>
+							</f:title>
+							<f:layout>
+								<f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4"
+									emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+							</f:layout>
+							<f:formContainers>
+								<f:FormContainer>
+									<f:formElements>
+									<f:FormElement label="Employee Comments">
+											<f:fields>
+												<TextArea rows="3" id="empcmt" value="{idpdata>/EmpComm}"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Manager Comments">
+											<f:fields>
+												<TextArea rows="3" id="mngcmt" value="{idpdata>/MangComm}"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="HR Comments">
+											<f:fields>
+												<TextArea rows="3" id="hrcmt" value="{idpdata>/HrComm}"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Employee Mid Year Review Comments">
+											<f:fields>
+												<TextArea rows="3" id="empmy" value="{idpdata>/EmpMrComm}"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Manager Mid Year Review Comments">
+											<f:fields>
+												<TextArea rows="3" id="mngy" value="{idpdata>/MangMrComm}"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Director Mid Year Review Comments">
+											<f:fields>
+												<TextArea rows="3" id="dy" value="{idpdata>/DireMrComm}"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="HR Mid Year Review Comments">
+											<f:fields>
+												<TextArea rows="3" id="hry" value="{idpdata>/HrMrComm}"/>
+											</f:fields>
+										</f:FormElement>
+										
+									</f:formElements>
+								</f:FormContainer>
+							</f:formContainers>
+						</f:Form> -->
+						
+						<Toolbar>
+					<Title  text=""/>
+					<ToolbarSpacer></ToolbarSpacer>
+					<Text textAlign="End" text="{Idp_Model>/Status}"/>
+				</Toolbar>
+
+<f:SimpleForm id="SimpleFormChange480_12120Dual"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="3"
+			columnsL="3"
+			columnsM="3"
+			singleContainerFullSize="false" >
+
+			<f:content>
+
+		
+		<core:Title text="IDP Approvals"/>
+		<Label id="U_Id" text="User ({= ${idpdata>/Pernr}} &amp;{= ${idpdata>/Ename}})"/>
+		<TextArea id="empcmt" growing="true" value="{idpdata>/EmpComm}"  />
+		<Label id="Mn_Id" text="Manager ({= ${idpdata>/Mangname}} &amp; {= ${idpdata>/Idpmana}})"/>
+		<TextArea id="mngcmt" growing="true" value="{idpdata>/MangComm}"  />
+		<Label id="Hrn_Id" text="HR({= ${idpdata>/Hrname}} &amp; {= ${idpdata>/Idphr}})"/>
+		<TextArea id="hrcmt" growing="true" value="{idpdata>/HrComm}"  />
+		
+		
+		<core:Title text="1st Midyear Review"/>
+		<Label/>
+		<TextArea id="empmy" growing="true"  value="{idpdata>/EmpMrComm}" />
+		<Label/>
+		<TextArea id="mngy" growing="true"  value="{idpdata>/MangMrComm}"/>
+		<Label/>
+		<TextArea id="hry" growing="true"  value="{idpdata>/HrMrComm}" />
+		<Label id="Dir_Id" text="Director ({= ${idpdata>/Direname}} &amp; {= ${idpdata>/Idprdir}})"/>
+		<TextArea id="dy" growing="true"  value="{idpdata>/DireMrComm}"/>
+		
+</f:content>
+</f:SimpleForm>
+					</VBox>
+				
+			</content>
+				<footer>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Button text="Approve" press="Approve" />
+						<Button text="Reject" press="Reject" type="Reject"/>
+					
+					</OverflowToolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

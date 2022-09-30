@@ -1,0 +1,251 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="Z_IDP_Development.Z_IDP_Development.controller.idpreview" xmlns:html="http://www.w3.org/1999/xhtml"
+		xmlns:tnt="sap.tnt" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="Individual Development Form" showFooter="true" showNavButton="true" navButtonPress="back">
+				<content>
+					<VBox>
+						<f:SimpleForm id="sf" editable="true" 
+						layout="ResponsiveGridLayout"
+					 backgroundDesign="Translucent" breakpointL="1024" breakpointM="600" breakpointXL="1440"
+						
+				>
+							<f:content>
+								<core:Title text=""/>
+								<Label text="Name"/>
+								<Text text="xxxxx" />
+								<Label text="Employee Name"/>
+								<Text text="xxxx"/>
+								<Label text="Department"/>
+								<Text text="xxxx" />
+								<core:Title text=""/>
+								<Label text="Designation"/>
+								<Text text="xxxx"/>
+								<Label text="Grade"/>
+								<Text text="xxxx" />
+								<Label text=" HOD"/>
+								<Text text="xxxx" />
+							
+                               </f:content>
+						</f:SimpleForm>
+					
+						<Table inset="false" id="tb2" growing="true" width="100%" class=".sapMListTblCell">
+						<headerToolbar>
+								<OverflowToolbar>
+										<Text text="Vedanta Leadership Competencies"/>
+								</OverflowToolbar>
+							</headerToolbar>
+							
+							<infoToolbar>
+								<Toolbar>
+								<Text text="Areas of Development(chose max.3 from the above competencies)"/>
+								</Toolbar>
+							</infoToolbar>
+							
+						<columns>
+							<Column>
+								<Text text="Select"/>
+								</Column>
+								<Column>
+								<Text text="Ledership Competencies"/>
+							</Column>
+								<Column>
+								<Text text="Development Options"/>
+							</Column>
+								<Column>
+								<Text text="Theme of Assignment"/>
+							</Column>
+								<Column>
+								<Text text="Description of Assignment"/>
+							</Column>
+								<Column>
+								<Text text="StartDate"/>
+							</Column>
+								<Column>
+								<Text text="EndDate"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+	<!-- 								                	 <l:VerticalLayout 
+		class="sapUiContentPadding"
+		width="100%">
+									
+		<ComboBox
+		
+			selectionChange="handleSelectionChange"
+			
+			width="350px"
+			items="{
+				path: '/MApprove',
+				sorter: { path: 'a' }
+			}">
+			<core:Item  text="{a}"/>
+		</ComboBox> 
+	</l:VerticalLayout>-->          <Text text="xxxxx"/>
+	
+									<Text text="xxxxx"/>
+									<Text text="xxxxx"/>
+									<Text text="xxxxx"/>
+									<Text text="xxxxx"/>
+									<Text text="xxxxx"/>
+									<Text text="xxxxx"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+						</Table>
+				
+					
+						<Table inset="false" id="tb3" growing="true" width="100%" class=".sapMListTblCell ">
+						<headerToolbar>
+								<OverflowToolbar>
+										<Text text="Vedanta Leadership Competencies"/>
+								</OverflowToolbar>
+							</headerToolbar>
+								
+							<infoToolbar>
+							<OverflowToolbar>
+					<Text text="Strengths to be Leverged(chose max.2 from the above competencies)"/>
+					</OverflowToolbar>
+					</infoToolbar>
+						<columns>
+								<Column>
+								<Text text="Select"/>
+								</Column>
+								
+							<Column>
+								<Text text="Ledership Competencies"/>
+							</Column>
+								<Column>
+								<Text text="Development Options"/>
+							</Column>
+								<Column>
+								<Text text="Theme of Assignment"/>
+							</Column>
+								<Column>
+								<Text text="Description of Assignment"/>
+							</Column>
+								<Column>
+								<Text text="StartDate"/>
+							</Column>
+								<Column>
+								<Text text="EndDate"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem class=".sapMListTblCell ">
+								<cells>
+		<!-- 								<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="100%">
+									
+		<ComboBox
+			selectionChange="handleSelectionChange"
+			
+			width="350px"
+			items="{
+				path: '/MApprove',
+				sorter: { path: 'a' }
+			}">
+			<core:Item  text="{a}"/>
+		</ComboBox>
+	</l:VerticalLayout> -->         <Text text="xxxxx"/>
+									<Text text="xxxxx"/>
+									<Text text="xxxxx"/>
+									<Text text="xxxxx"/>
+									<Text text="xxxxx"/>
+									<Text text="xxxxx"/>
+									<Text text="xxxxx"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+						</Table>
+					
+			
+						<Table inset="false" id="tb4" growing="true" width="100%" class=".sapMListTblCell ">
+						<headerToolbar>
+								<OverflowToolbar>
+										<Text text="Vedanta Leadership Competencies"/>
+								</OverflowToolbar>
+							</headerToolbar>
+								
+							<infoToolbar>
+							<OverflowToolbar>
+					<Text text="Career Aspirations"/>
+					</OverflowToolbar>
+					</infoToolbar>
+						<columns>
+								<Column>
+								<Text text="Short Term(1 to 2 years)"/>
+								</Column>
+								
+							<Column>
+								<Text text="Next Carrer Stage(3 to 4 years)"/>
+							</Column>
+								<Column>
+								<Text text="Open for Migration"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem class=".sapMListTblCell ">
+								<cells>
+										
+									<Text text="xxxxx"/>
+									<Text text="xxxxx"/>
+									<Text text="xxxxx"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+						</Table>
+					<f:Form id="FormChange354" editable="true">
+							<f:title>
+								<core:Title text=" APPROVALS"/>
+							</f:title>
+							<f:layout>
+								<f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4"
+									emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+							</f:layout>
+							<f:formContainers>
+								<f:FormContainer>
+									<f:formElements>
+									<f:FormElement label="Employee Comments">
+											<f:fields>
+												<TextArea rows="3" id="emp"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Manager Comments">
+											<f:fields>
+												<TextArea rows="3" id="mng"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="HR Comments">
+											<f:fields>
+												<TextArea rows="3" id="hr"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Director Comments">
+											<f:fields>
+												<TextArea rows="3" id="director"/>
+											</f:fields>
+										</f:FormElement>
+									</f:formElements>
+								</f:FormContainer>
+							</f:formContainers>
+						</f:Form>
+					</VBox>
+				
+			</content>
+					<footer>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Button text="Submit" press="Submit" enabled="true" type="Emphasized"/>
+						
+					
+					</OverflowToolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,62 @@
+<mvc:View controllerName="Z_IDP_Development.Z_IDP_Development.controller.idpdetails" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="IDP Development">
+						<tnt:ToolHeader design="Auto"  width="180%">
+					
+						<!-- <RadioButton id="r1" text="IDP"  select="rb1" /> -->
+						
+						<Label design="Bold"
+							text="IDP Approvals"></Label> 
+					</tnt:ToolHeader>
+				
+				<content>
+				<Toolbar>
+				 <Label design="Bold"
+							text="Items ({= ${idpdetails>/}.length})"></Label> 
+				<ToolbarSpacer/>
+					<SearchField id="search" liveChange="onSearch" width="20%" />
+				</Toolbar> 
+					<Table items="{idpdetails>/}" inset="false" id="tb1" class=".sapMListTblCell ">
+						<columns>
+							<Column hAlign="Center">
+								<Text text="IDP Number"/>
+							</Column>
+								<Column 	demandPopin="true" minScreenWidth="Tablet" hAlign="Center">
+								<Text text="Employee Number"/>
+							</Column>
+								<Column 	demandPopin="true" minScreenWidth="Tablet" hAlign="Center">
+								<Text text="Employee Name"/>
+							</Column>
+								<Column 	demandPopin="true" minScreenWidth="Tablet" hAlign="Center">
+								<Text text="Department"/>
+							</Column>
+							<Column 	demandPopin="true" minScreenWidth="Tablet" hAlign="Center">
+								<Text text="Status"/>
+							</Column>
+							<Column hAlign="Center">
+								<Text text="Download"/>
+							</Column>
+						</columns>
+						<items>
+						<ColumnListItem>
+						<cells >
+							<Button id="df" text="{idpdetails>idpno}" press="df" type="Emphasized"/>
+							<Text text="{idpdetails>empno}"/>
+							<Text text="{idpdetails>ename}"/>
+							<Text text="{idpdetails>dept}"/>
+							<Text text="{idpdetails>Status}"/>
+							<core:Icon press="fldownload" id="dw" src="sap-icon://download" size ="1rem"/>
+						</cells>
+						</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
