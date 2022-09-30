@@ -1,0 +1,23 @@
+{
+	"EmployeeDetails":[
+		{
+            "Compnay":"vernasoft",
+			"Name":"shashikumar",
+			"Eid":"v1001",
+			"Lta Cliam For the Year":"2020",
+			"LtaNo":"10001",
+			"EmployeeNo":"101",
+			"EmployeeName":"XYZ",
+			"Department":"IT",
+			"Designation":"Associate Manager-IT",
+			"Leaves Availed From":"May 11, 2020",
+			"To":"May 19, 2020",
+			"No Of Days":"09",
+			"Mode Of Travel":"Car",
+			"Destination":"manali",
+			"Cost Of Travel":"20000",
+			"Airfare(Y)/AC 1st Rail By The ShortestRoute":"00",
+			"Deluxe/ 1st Class Fare By The Shortest Route":"00"
+			
+		}]
+}

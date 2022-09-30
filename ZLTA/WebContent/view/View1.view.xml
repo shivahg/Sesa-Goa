@@ -1,0 +1,167 @@
+<mvc:View controllerName="lta1.ZLTA.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" 	xmlns:u="sap.ui.unified"
+	xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}" showNavButton="true" navButtonPress="back">
+					<content>
+						<VBox class="sapUiSmallMargin">
+			<f:SimpleForm id="SimpleFormChange480_12120Dual"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="LTA CLAIM FORM"
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="2"
+			singleContainerFullSize="false" >
+			<f:content>
+					<core:Title text="" />
+				<Label text="Compnay" />
+				<Text id="C_id" text="{lta_model/0/company_name}"/>
+				<Label text="Lta Cliam For the Year" />
+				<Text id="LY_id" text="{lta_model>/0/Gjhr}"/>
+					<Label text="LtaNo" />
+				<Text id="L_tid" text="{lta_model>/0/Ltano}"/>
+					<Label text="EmployeeNo" />
+				<Text id="E_tid" text="{lta_model>/0/Pernr}"/>
+					<Label text="EmployeeName" />
+				<Text  id="En_id" text="{lta_model>/0/Ename}"/>
+					<Label text="Department" />
+				<Text  id="D_id" text="{lta_model>/0/Dept}"/>
+					<Label text="Designation" />
+				<Text id="Des_id" text="{lta_model>/0/Desi}"/>
+				<core:Title text="" />
+				<Label text="Leaves Availed From" />
+				<DateRangeSelection
+			id="DP1"
+			change="handleChange" width="35%"/>			<Label text="No Of Days" />
+			<Input id="inp1" value="{lta_model>/0/Ndays}" width="35%"/>
+			<Label text="Mode Of Travel" />
+			<Input id="inp2" value="{lta_model>/0/Tmod}"  width="35%"/>
+			
+			<Label text="Destination" />
+			<Input id="inp3" value="{lta_model>/0/Dest}"  width="35%"/>
+			<Label text="Cost Of Travel" />
+			<Input id="inp4" value="{lta_model>/0/Ctrvl}"  width="35%"/>
+			<Label text="Airfare(Y)/AC 1st Rail By The ShortestRoute" />
+			<Input id="inp5" value="{lta_model>/0/Airf}"  width="35%"/>
+			<Label text="Deluxe/ 1st Class Fare By The Shortest Route" />
+			<Input id="inp6" value="{lta_model>/0/Delu}"  width="35%"/>
+			<Label/>
+			</f:content>
+		</f:SimpleForm>
+	<ObjectHeader
+	title="Enter your Family Details"/>
+	<HBox>
+	<Button id="RId" icon="sap-icon://create-form" text="AddRows" press="addrow" />
+	
+		</HBox>
+					<Label/>
+				<Table id="table" 
+								inset="false" 
+								items="{fam_model>/}"
+								enableBusyIndicator="false" 
+								growing="true" 
+								mode="Delete"
+								delete="handleDelete"
+								width="35%">
+									<columns>
+										<Column>
+												<Text text="Name"/>
+									
+										</Column>
+										<Column>
+											<Text text="Relationship"/>
+										</Column>
+										<Column>
+											<Text text="Age"/>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem>
+											<cells>
+												<Text text="{fam_model>Name}"/>
+												<Text text="{fam_model>Relat}"/>
+												<Text text="{fam_model>Age}"/>
+												
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+								<Label/>
+								<l:VerticalLayout>
+									<ObjectHeader
+	title="Attach Documents To Claim LTA Exemption"/>
+							<Label id="FId" text="File:" />
+		<u:FileUploader
+			id="fileUploader"
+			name="myFileUpload"
+			uploadUrl="upload/"
+			tooltip="Upload your file to the local server"
+			uploadComplete="handleUploadComplete"/>
+			<Label id="DId" text="Description:"/>
+			<Input id="descId" value="" width="55%" />
+		<Button
+		    id="uploadId"
+			text="Upload File"
+			press="handleUploadPress"/>
+	</l:VerticalLayout>
+			
+				<Label/>
+				<Table id="table1" 
+								inset="false" 
+								items="{doc_model>/}" 
+								enableBusyIndicator="false" 
+								growing="true" 
+								mode="Delete"
+								delete="handleFileDelete"
+								width="35%">
+									<columns>
+										<Column>
+												<Text text="FileType"/>
+									
+										</Column>
+										<Column>
+											<Text text="Description"/>
+										</Column>
+										
+									</columns>
+									<items>
+										<ColumnListItem>
+											<cells>
+												<Text text="{doc_model>Filetype}"/>
+												<Text text="{doc_model>Descr}"/>
+												
+												
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+								</VBox>
+				</content>
+					<footer >
+					<Bar>
+						<contentRight>
+							<!--<Button id="bttn1" text="Create" press="create" />-->
+							<Button id="bttn" icon="sap-icon://save" text="Save and Submit" press="submit" />
+							
+							<Button id="Edit_Id" text="Edit" type="Emphasized" press="edit" visible="false"/>
+						</contentRight>
+					</Bar>
+				</footer>
+						
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
