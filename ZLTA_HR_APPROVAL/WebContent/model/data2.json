@@ -1,0 +1,77 @@
+{
+	"hrdata2" : [
+		{
+			"company" : "Vedanta",
+			"ltacy" : "2020",
+			"ltano" : "1055",
+			"empno" : "1001",
+			"empname":"abc",
+			"dept" : "It",
+			"des" : "associative",
+			"laf" : "25-09-6",
+			"lat" : "25-09-6",
+			"nod":"10",
+			"mot" : "air",
+			"desn" : "america",
+			"cot" : "1L",
+			"af" : "xyz",
+			"del" : "abc"
+		},
+		
+			{
+			"company" : "Vedanta",
+			"ltacy" : "2020",
+			"ltano" : "1055",
+			"empno" : "1002",
+				"empname":"efg",
+			"dept" : "It",
+			"des" : "associative",
+			"laf" : "25-09-6",
+			"lat" : "25-09-6",
+		    "nod":"11",
+
+			"mot" : "air",
+			"desn" : "america",
+			"cot" : "1L",
+			"af" : "xyz",
+			"del" : "abc"
+		},
+		{
+			"company" : "Vedanta",
+			"ltacy" : "2020",
+			"ltano" : "1055",
+			"empno" : "1003",
+				"empname":"hij",
+			"dept" : "It",
+			"des" : "associative",
+			"laf" : "25-09-6",
+			"lat" : "25-09-6",
+						"nod":"12",
+
+			"mot" : "air",
+			"desn" : "america",
+			"cot" : "1L",
+			"af" : "xyz",
+			"del" : "abc"
+		},
+			{
+			"company" : "Vedanta",
+			"ltacy" : "2020",
+			"ltano" : "1055",
+			"empno" : "1004",
+				"empname":"klm",
+			"dept" : "It",
+			"des" : "associative",
+			"laf" : "25-09-6",
+			"lat" : "25-09-6",
+						"nod":"13",
+
+			"mot" : "air",
+			"desn" : "america",
+			"cot" : "1L",
+			"af" : "xyz",
+			"del" : "abc"
+		}
+	
+		]
+}

@@ -1,0 +1,194 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="split.ZSPLIT.controller.Detail"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:m="sap.m">
+	<App>
+		<pages>
+			<Page title="LTA" showFooter="true">
+<!--				<content>-->
+					<!--<Table id="tb"
+						items="{new>/}" inset="true">
+						<columns>
+						
+							<Column>
+								<Text text="EmpId"/>
+							</Column>
+								<Column>
+								<Text text="Personalno"/>
+							</Column>
+							<Column>
+								<Text text="Subtype"/>
+							</Column>
+								<Column>
+								<Text text="EndDate"/>
+							</Column>
+								<Column>
+								<Text text="StartDate"/>
+							</Column>
+								<Column>
+								<Text text="QuotaNumber"/>
+							</Column>
+								<Column>
+								<Text text="abstype"/>
+						</Column>
+								<Column>
+								<Text text="Leavetype"/>
+						</Column>
+								<Column>
+								<Text text="Remarks"/>
+						</Column>
+						</columns>
+						<items>
+							<ColumnListItem selected="true">
+								<cells>
+									<Label text="{new>EmpId}"/>
+									<Label text="{new>Personalno}"/>
+							
+										
+											<Label text="{new>Subtype}"/>
+											<Label text="{new>EndDate}"/>
+										
+											<Label text="{new>StartDate}"/>
+													<Label text="{new>QuotaNumber}"/>
+											
+													<Label text="{new>abstype}"/>
+														<Label text="{new>Leavetype}"/>
+															<Label text="{new>Remarks}"/>
+					
+								</cells>
+							
+							</ColumnListItem>
+						</items>
+					</Table>-->
+		<!--			<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="SimpleFormChange480_12120Dual" editable="true" 
+						layout="ResponsiveGridLayout"
+						title="LTA CLAIM FORM" 
+						labelSpanXL="3"
+					labelSpanL="4"
+					labelSpanM="4"
+					labelSpanS="4"
+					adjustLabelSpan="false"
+					emptySpanXL="0"
+					emptySpanL="0"
+					emptySpanM="0"
+					emptySpanS="0"
+					columnsXL="2"
+					columnsL="2"
+					columnsM="2"
+					singleContainerFullSize="false">
+							<f:content>
+								<core:Title text=""/>
+								<Label text="Compnay"/>
+								<Text text="VernaSoft"/>
+								<Label text="Lta Cliam For the Year"/>
+								<Text text="2020"/>
+								<Label text="LtaNo"/>
+								<Text text="10001"/>
+								<Label text="EmployeeNo"/>
+								<Text text="101"/>
+								<Label text="EmployeeName"/>
+								<Text text="XYZ"/>
+								<Label text="Department"/>
+								<Text text="IT"/>
+								<Label text="Designation"/>
+								<Text text="Associate Manager-IT"/>
+								<core:Title text=""/>
+								<Label text="Leaves Availed From"/>
+								<FlexBox>
+								<DatePicker id="DP1" placeholder="Enter Date ..." change="handleChange" class="sapUiSmallMarginBottom"/><Text text="To" width="40%"/>
+								<DatePicker id="DP2" width="30%" placeholder="Enter Date ..." change="handleChange" class="sapUiSmallMarginBottom"/>
+								</FlexBox>
+								<Label text="No Of Days"/>
+								<Input value="" width="35%"/>
+								<Label text="Mode Of Travel"/>
+								<Input value="" width="35%"/>
+								<Label text="Destination"/>
+								<Input value="" width="35%"/>
+								<Label text="Cost Of Travel"/>
+								<Input value="" width="35%"/>
+								<Label text="Airfare(Y)/AC 1st Rail By The ShortestRoute"/>
+								<Input value="" width="35%"/>
+								<Label text="Deluxe/ 1st Class Fare By The Shortest Route"/>
+								<Input value="" width="35%"/>
+								<Label/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+						<VBox class="sapUiSmallMargin">
+		<f:Form id="FormChange354"
+			editable="true">
+			<f:title>
+				<core:Title text="HR APPROVAL" />
+			</f:title>
+			<f:layout>
+				<f:ResponsiveGridLayout
+					labelSpanXL="3"
+					labelSpanL="3"
+					labelSpanM="3"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="4"
+					emptySpanL="4"
+					emptySpanM="4"
+					emptySpanS="0"
+					columnsXL="1"
+					columnsL="1"
+					columnsM="1"
+					singleContainerFullSize="false" />
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer>
+					<f:formElements>
+						<f:FormElement label="Advance against LTA Paid">
+							<f:fields>
+								<Input width="50%"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="Amount LTA Admisible">
+							<f:fields>
+							<Input width="50%"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="Balance LTA Payable">
+							<f:fields>
+								<Input width="50%"/>
+								
+							
+								
+							</f:fields>
+						</f:FormElement>
+							<f:FormElement label="HR Comments">
+							<f:fields>
+								<TextArea rows="3"/>
+								
+							
+								
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="HR,HOD Comments">
+						<f:fields>
+								<TextArea rows="3"/>
+								
+							
+								
+							</f:fields>
+						
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+	</VBox>
+				</content>
+				<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button text="Approve" type="Emphasized" />
+				<Button text="Reject" press="onpress2" type="Emphasized" />
+				
+			</OverflowToolbar>
+		</footer>-->
+		<Text text="Overview"/>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

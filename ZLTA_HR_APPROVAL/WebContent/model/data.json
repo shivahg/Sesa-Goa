@@ -1,0 +1,32 @@
+
+
+
+
+{
+	"resullts" : [
+		{
+		"EmpId" : "1001",
+		"LopApprovals" : "2"
+		},
+		{
+		"EmpId" : "1002",
+		"LopApprovals" : "5"
+		},
+		{
+		"EmpId" : "1003",
+		"LopApprovals" : "2"
+		},
+		{
+		"EmpId" : "1004",
+		"LopApprovals" : "3"
+		},
+		{
+		"EmpId" : "1005",
+		"LopApprovals" : "5"
+		}
+	]
+}
+
+
+
+

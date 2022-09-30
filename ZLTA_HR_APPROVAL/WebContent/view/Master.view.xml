@@ -1,0 +1,58 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="split.ZSPLIT.controller.Master"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="EmpId">
+				<!--	<FlexBox>	
+
+				<SearchField
+				id="searchField"
+				search="onSearch"
+				suggest="onSuggest"
+				width="100%">
+							
+			</SearchField>
+		
+				<ToggleButton
+							icon="sap-icon://filter"
+							tooltip="Enable / Disable Cell Filter"
+							press="onpress1">
+							<customData>
+					<core:CustomData
+						key="multi"
+						value="true" />
+				</customData>
+				</ToggleButton>	
+				
+				<ToggleButton
+							icon="sap-icon://sort"
+							tooltip="Enable / Disable Cell Filter"
+							press="onpress2">
+							<customData>
+					<core:CustomData
+						key="multi"
+						value="true" />
+				</customData>
+				</ToggleButton>	
+				
+			</FlexBox>-->
+				
+				<content>
+					
+			
+						
+					
+                        <List id="List" items="{/hrdata2}">
+                        	<items>
+							<StandardListItem  id="ol" type="Navigation" press="onItemSelection" title="{empno}">
+					
+							
+							</StandardListItem >
+							</items>
+						</List>
+				
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

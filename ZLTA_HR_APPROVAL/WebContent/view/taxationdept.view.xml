@@ -1,0 +1,58 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="split.ZSPLIT.controller.taxationdept"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:m="sap.m" 	xmlns:u="sap.ui.unified">
+	<App>
+		<pages>
+			<Page title="Taxation Department" showFooter="true">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:Form id="FormChange354" editable="true">
+							<f:title>
+								<core:Title text="TAXATION DEPARTMENT"/>
+							</f:title>
+							<f:layout>
+								<f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4"
+									emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+							</f:layout>
+							<f:formContainers>
+								<f:FormContainer>
+									<f:formElements>
+										<f:FormElement label="Amount of LTA">
+											<f:fields>
+												<Text text="28.000" width="50%"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Less amount of LTA exempt from IT">
+											<f:fields>
+												<Text text="28.000" width="50%"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Amount taxable">
+											<f:fields>
+												<Text text="2000" width="50%"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Tax Comments">
+											<f:fields>
+												<TextArea rows="3"/>
+											</f:fields>
+										</f:FormElement>
+										
+									</f:formElements>
+								</f:FormContainer>
+							</f:formContainers>
+							
+						</f:Form>
+						
+					</VBox>
+				</content>
+				<footer>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Button text="Approve" type="Emphasized" press="Approve"/>
+						<Button text="Reject" press="onpress2" type="Emphasized"/>
+					</OverflowToolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

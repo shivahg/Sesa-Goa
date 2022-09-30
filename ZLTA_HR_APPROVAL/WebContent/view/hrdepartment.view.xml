@@ -1,0 +1,144 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="split.ZSPLIT.controller.hrdepartment"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:m="sap.m">
+	<App>
+		<pages>
+			<Page title="hrdepartment" showFooter="true">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="SimpleFormChange480_12120Dual" editable="true" 
+						layout="ResponsiveGridLayout"
+						title="LTA CLAIM FORM" backgroundDesign="Translucent" breakpointL="1024" breakpointM="600" breakpointXL="1440"
+						labelSpanXL="4"
+					labelSpanL="4"
+					labelSpanM="2"
+					labelSpanS="2"
+					adjustLabelSpan="true"
+					emptySpanXL="2"
+					emptySpanL="2"
+					emptySpanM="1"
+					emptySpanS="1"
+					columnsXL="2"
+					columnsL="2"
+					columnsM="2"
+					singleContainerFullSize="false">
+							<f:content>
+								<core:Title text=""/>
+								<Label text="Compnay"/>
+								<Text text="{hrdata>/0/company}"/>
+								<Label text="Lta Cliam For the Year"/>
+								<Text text="{hrdata>/0/ltacy}"/>
+								<Label text="LtaNo"/>
+								<Text text="{hrdata>/0/ltano}"/>
+								<Label text="EmployeeNo"/>
+								<Text text="{hrdata>/0/EmpId}"/>
+								<Label text="EmployeeName"/>
+								<Text text="{hrdata>/0/ename}"/>
+								<Label text="Department"/>
+								<Text text="{hrdata>/0/dept}"/>
+								<Label text="Designation"/>
+								<Text text="{hrdata>/0/des}"/>
+								<core:Title text=""/>
+								<Label text="Leaves Availed From"/>
+								
+								<Text text="{hrdata>/0/laf}"/>
+								<FlexBox>
+								<Text text="To:"/>
+								<Text text="{hrdata>/0/lat}"/>
+							</FlexBox>
+								
+								<Label text="No Of Days"/>
+                                 <Text text="{hrdata>/0/nod}"/>
+								<Label text="Mode Of Travel"/>
+								<Text text="{hrdata>/0/mot}"/>
+								<Label text="Destination"/>
+								<Text text="{hrdata>/0/desn}"/>
+								<Label text="Cost Of Travel"/>
+								<Text text="{hrdata>/0/cot}"/>
+								<Label text="Airfare(Y)/AC 1st Rail By The ShortestRoute"/>
+								<Text text="{hrdata>/0/af}"/>
+								<Label text="Deluxe/ 1st Class Fare By The Shortest Route"/>
+							    <Text text="{hrdata>/0/del}"/>
+								<Label/>
+							
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+						<Table id="table" inset="true">
+						<columns>
+							<Column>
+								<Text text="Name"/>
+							</Column>
+							<Column>
+								<Text text="RelationShip"/>
+							</Column>
+								<Column>
+								<Text text="Age"/>
+							</Column>
+							
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Label text="ABC" />
+									<Label text="xyz" />
+										<Label text="40"/>
+										
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					<VBox class="sapUiSmallMargin">
+						<f:Form id="FormChange354" editable="true">
+							<f:title>
+								<core:Title text="HR APPROVAL"/>
+							</f:title>
+							<f:layout>
+								<f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4"
+									emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+							</f:layout>
+							<f:formContainers>
+								<f:FormContainer>
+									<f:formElements>
+										<f:FormElement label="Advance against LTA Paid">
+											<f:fields>
+												<Text text="0.000" width="50%"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Amount LTA Admisible">
+											<f:fields>
+												<Text text="0.000" width="50%"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Balance LTA Payable">
+											<f:fields>
+												<Text text="0.000" width="50%"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="HR Comments">
+											<f:fields>
+												<TextArea rows="3"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="HR,HOD Comments">
+											<f:fields>
+												<TextArea rows="3"/>
+											</f:fields>
+										</f:FormElement>
+									</f:formElements>
+								</f:FormContainer>
+							</f:formContainers>
+						</f:Form>
+					</VBox>
+				</content>
+				<footer>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Button text="Approve" type="Emphasized" press="Approve"/>
+						<Button text="Reject" press="onpress2" type="Emphasized"/>
+					</OverflowToolbar>
+				</footer>
+		
+		</Page>
+	</pages>
+</App>
+</mvc:View>
